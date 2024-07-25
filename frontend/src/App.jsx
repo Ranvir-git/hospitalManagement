@@ -23,7 +23,7 @@ const App = () => {
     const fetchUser = async () => {
       try {
         let response = await axios.get(
-          "http://localhost:4000/api/v1/user/patient/me",
+          `${import.meta.env.VITE_FRONTEND_URL}/api/v1/user/patient/me`,
           {
             withCredentials: true,
           }
